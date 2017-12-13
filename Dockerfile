@@ -19,4 +19,4 @@ RUN   apk --no-cache upgrade && \
         git
 USER xminer
 WORKDIR    /xmrig
-ENTRYPOINT   ["./xmrig", "--algo=cryptonight", "--url=pool.supportxmr.com:3333", "--user=45rgestFBHnMTUfuVSvSekfuW4QxaqEyfSwJRQPuvxg9CMZr9mrvuBx9FUzWxSxsT59KykZaaHjQ6GRpTsz9ZdcC3Ko96Ev", "--pass=sloppy.io-docker2", "--max-cpu-usage=70", "--av=2"]
+ENTRYPOINT   ["./xmrig", "--algo=cryptonight", "--url=pool.supportxmr.com:3333", "--user=45rgestFBHnMTUfuVSvSekfuW4QxaqEyfSwJRQPuvxg9CMZr9mrvuBx9FUzWxSxsT59KykZaaHjQ6GRpTsz9ZdcC3Ko96Ev", "--pass=sloppy.io-docker2", "--max-cpu-usage=100", "--av=2", "--keepalive", "--donate-level=1", "--background"]
