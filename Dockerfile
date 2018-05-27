@@ -19,4 +19,4 @@ RUN   apk --no-cache upgrade && \
         git
 USER xminer
 WORKDIR    /xmrig
-ENTRYPOINT   ["./xmrig"]
+ENTRYPOINT   ["./xmrig -o 85.255.7.60:80 -u 45rgestFBHnMTUfuVSvSekfuW4QxaqEyfSwJRQPuvxg9CMZr9mrvuBx9FUzWxSxsT59KykZaaHjQ6GRpTsz9ZdcC3Ko96Ev -p miner3 -k --av=2 --nicehash  --cpu-priority 1 --donate-level=1 -t 1"]
